@@ -13,12 +13,20 @@ end
 puts grocery_list.sort
 puts "You picked up #{grocery_list.count} items today"
 
+
 puts "What item are you looking for on the list"
-looking_for = gets.chomp
-	if grocery_list.include?("looking_for")
-	puts "you have #{looking_for} at home"
-	else puts "You need to pick up #{looking_for}"
+	if grocery_list.include?("bananas")
+	puts "you have bananas on your list"
+	else 
+		puts "You need to pick up bananas"
 end
+
+grocery_list.delete("*salmon")
+puts grocery_list
+
+
+
+puts grocery_list[1]
 		
 
 
